@@ -7,11 +7,20 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
     <link rel="icon" href="loopy.jpg">
-    <icon></icon>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+        emailjs.init({
+            publicKey: "JxoZDiQWBVZpr95Cw",
+        });
+    })();
+</script>
 </head>
 <body>
+    <center><img id="main-gif" src="loop.gif" width="350" height="300"></center>
     <div id="card">
-        <center><img id="main-gif" src="loop.gif" width="350" height="300"></center>
         <h3 class="text" id="text">happy 13th monthsary, my bb! I love you soooo much!!<br></h3>
         <div class="text" id="query">
             Love me back?
@@ -20,6 +29,26 @@
             <button class="text" id="yes">I love you, too!</button>
             <button class="text" id="no">No, I hate you!</button>
         </div>
+    </div>
+    <div id="message" class="message-container">
+        <img src="stargazer.gif">
+        <div class="message">
+            <h3 style="text-align: left;" id="my-message-text" class="text">
+                To my love,
+                <br>
+                <p>We have now been together for 13 months! I just wanted to remind you of how amazing you are and how much I love you. 
+                I'm so proud of how our relationship has developed and to see how far we've both come. Know that my love for 
+                you is unconditional and there is nothing you could do to make me love you less. I'll always be rooting for you and your success. I'm sorry for sometimes letting my emotions get the best of me;
+                I know it doesn't mean much anymore, but I promise I'll control my emotions better. Happy 13 months to us, bb!</p>
+                Missing you very much, <span style="color:rgb(243, 102, 102)">Andre</span>
+            </h3>
+        </div>
+    </div>
+    <div id="message-for-me">
+        <form class="my-form">
+            <textarea id="your-message" placeholder="Share me a message?"></textarea>
+            <button type="submit" id="submit-button">Send</button>
+        </form>
     </div>
     <script src="script.js"></script>
 </body>
